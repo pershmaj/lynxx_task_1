@@ -1,0 +1,11 @@
+<div class="picture-list">
+  <transition-group name="picture-item">
+    <div
+      class="picture-item"
+      v-for="(picture, index) in pictures"
+      :key="picture.name"
+    >
+      <PictureImg :src="picture.data" :name="picture.name" :showDetail="true" />
+    </div>
+  </transition-group>
+</div>

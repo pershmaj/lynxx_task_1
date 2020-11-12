@@ -1,0 +1,28 @@
+.picture {
+  &-list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+
+  &-item {
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+
+    &-enter-from {
+      opacity: 0;
+    }
+
+    &-enter-active {
+      transition: all 0.5s;
+    }
+
+    &-leave-active {
+      transition: all 0.5s;
+      opacity: 0;
+    }
+  }
+}

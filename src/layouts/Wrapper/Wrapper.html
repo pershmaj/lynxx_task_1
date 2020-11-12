@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <nav>
+    <div class="nav-wrapper">
+      <div class="nav-item" @click="showFavorite = false">
+        <i class="fas fa-home icon"></i>
+        All pictures
+      </div>
+      <div class="nav-item" @click="showFavorite = true">
+        <i class="fas fa-star icon"></i>
+        Favorite pictures
+      </div>
+    </div>
+  </nav>
+  <section>
+    <PictureList :pictureList="pictureList" />
+  </section>
+</div>

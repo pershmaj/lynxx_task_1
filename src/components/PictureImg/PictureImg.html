@@ -1,0 +1,15 @@
+<div class="container">
+  <img :src="pictureSrc" class="picture" />
+  <div>{{name}}</div>
+  <div class="overlay" v-if="showDetail">
+    <div class="text" @click="openDetail = true">
+      <i class="fas fa-expand-arrows-alt"></i>
+    </div>
+  </div>
+</div>
+
+<PictureDetail
+  v-if="openDetail && showDetail"
+  :src="src"
+  @handleOpen="(v) => openDetail = v"
+/>

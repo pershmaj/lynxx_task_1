@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+}
+
+.nav {
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color: #862609e0;
+    color: #eaeaea;
+  }
+
+  &-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #67321aa1;
+    }
+
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
+}
